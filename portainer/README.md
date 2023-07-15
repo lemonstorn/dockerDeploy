@@ -8,15 +8,7 @@ portainer/portainer 镜像已被废弃，直接使用轻量版
 docker pull portainer/portainer-ce
 ```
 
-#### 2、创建目录
-
-```
-mkdir -p /usr/local/docker/portainer/public
-mkdir -p /usr/local/docker/portainer/data
-cd /usr/local/docker/portainer
-```
-
-#### 3、运行portainer
+#### 2、运行portainer
 
 ```
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer-ce
